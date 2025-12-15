@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Projects — Mvumu Empire Holdings</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><div class="logo">ME</div></a>
+    <nav>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html" class=>Projects</a></li>
+        
+        <li><a href="careers.html">Careers</a></li>
+       
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a class="cta" href="contact.html">Request Quote</a>
+      <button id="theme-toggle" class="cta" style="background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px 10px">Dark</button>
+    </div>
+  </div>
+</header>
+
+<main class="container" style="padding:28px 0">
+  <h1>Projects</h1>
+  <p class="small">Selected project portfolio and detailed case studies.</p>
+
+  <div class="filters" style="margin-top:12px">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="commercial">Commercial</button>
+    <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+    <button class="filter-btn" data-filter="sustainability">Sustainability</button>
+  </div>
+
+  <div style="margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px" id="projectsGrid">
+    <a class="card" href="project-p1.html" data-type="infrastructure"><h3>Harbor Bridge Replacement</h3><p class="small">R20M — Infrastructure</p></a>
+    <a class="card" href="project-p2.html" data-type="commercial"><h3>Centric Tower Redevelopment</h3><p class="small">R15M — Commercial</p></a>
+    <a class="card" href="project-p3.html" data-type="sustainability"><h3>GreenHub Solar Campus</h3><p class="small">R60M — Sustainability</p></a>
+    <a class="card" href="project-p4.html" data-type="commercial"><h3>Riverside Mixed-Use</h3><p class="small">R55M — Commercial</p></a>
+    <a class="card" href="project-p5.html" data-type="infrastructure"><h3>Highway Interchange Upgrade</h3><p class="small">R40M — Infrastructure</p></a>
+    <a class="card" href="project-p6.html" data-type="sustainability"><h3>Low-Carbon Retrofit</h3><p class="small">R19M — Sustainability</p></a>
+  </div>
+</main>
+
+<footer><div class="container">© 2025 Mvumu Empire Holdings (Pty) Ltd</div></footer>
+<script src="script.js"></script>
+<script>
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('#projectsGrid .card');
+  filterBtns.forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      filterBtns.forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      projects.forEach(p=>{
+        if(f==='all' || p.dataset.type===f) p.style.display='';
+        else p.style.display='none';
+      });
+    });
+  });
+</script>

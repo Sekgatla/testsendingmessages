@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Mvumu Empire Holdings — Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><div class="logo">ME</div></a>
+    <nav>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        
+        <li><a href="careers.html">Careers</a></li>
+        
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="cta" href="contact.html">Request Quote</a>
+      <button id="theme-toggle" class="cta" style="background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px 10px">Dark</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-left fade-in">
+        <h1>Building the Future with Precision & Care</h1>
+        <p>Welcome to Mvumu Empire Holdings — a South African privately owned company established in 2016. We deliver reliable technical and infrastructure-related services with a focus on professionalism, municipal support, and project-related solutions.</p>
+        <div style="margin-top:16px;display:flex;gap:12px;align-items:center">
+          <a class="btn cta" href="contact.html">Start Your Project</a>
+          <a class="btn" href="projects.html" style="background:transparent;border:2px solid rgba(255,255,255,0.2);color:white">View Projects</a>
+        </div>
+        <div style="margin-top:22px" class="kpi-row">
+          <div class="kpi"><strong>1,200+</strong><span class="small">Projects</span></div>
+          <div class="kpi"><strong>8</strong><span class="small">Countries</span></div>
+          <div class="kpi"><strong>0.18</strong><span class="small">TRIR (2024)</span></div>
+        </div>
+      </div>
+      <aside style="width:360px" class="fade-in">
+        <div class="card">
+          <h3 style="margin-top:0">Featured — Riverside Transit Hub</h3>
+          <p class="small">Transit-oriented development delivered ahead of schedule with integrated community access.</p>
+          <div style="margin-top:12px"><a href="project-p1.html" class="cta">Read Case Study</a></div>
+        </div>
+        <div class="card small">
+          <strong>Contact</strong><br>
+          +27 11 555 1234<br>info@mvumuempire.example
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="container fade-in" style="margin-top:30px">
+    <div style="display:flex;align-items:center;justify-content:space-between">
+      <div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="small">A selection of recent delivery highlights across sectors.</p>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+        <button class="filter-btn" data-filter="sustainability">Sustainability</button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery">
+      <div class="gallery-item" data-title="Harbor Bridge Replacement" data-desc="Full replacement of a 3-span maritime bridge with prefabricated spans.">
+        <img src="images/bridge site.jpeg" alt="">
+        <div class="gallery-caption"></div>
+      </div>
+      <div class="gallery-item" data-title="Centric Tower Redevelopment" data-desc="Adaptive reuse of a 28-story tower with seismic upgrades.">
+        <img src="images/project 2.png" alt="">
+        <div class="gallery-caption"></div>
+      </div>
+      <div class="gallery-item" data-title="GreenHub Solar Campus" data-desc="Net-zero campus with 12MW PV and microgrid controls.">
+        <img src="images/office 1.jpeg" alt="">
+        <div class="gallery-caption"></div>
+      </div>
+      <div class="gallery-item" data-title="Riverside Mixed-Use" data-desc="Phased retail & residential delivery with placemaking">
+        <img src="images/project 3.jpeg" alt="">
+        <div class="gallery-caption"></div>
+      </div>
+      <div class="gallery-item" data-title="Highway Interchange Upgrade" data-desc="Accelerated bridge construction and 24/7 traffic management">
+        <img src="images/bridge site.jpeg" alt="">
+        <div class="gallery-caption"></div>
+      </div>
+      <div class="gallery-item" data-title="Low-Carbon Retrofit" data-desc="Embodied carbon reduction and envelope upgrades">
+        <img src="images/project 4.png" alt="">
+        <div class="gallery-caption"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container fade-in" style="margin-top:32px">
+    <h2 class="section-title">Why clients choose us</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+      <div class="card center">
+        <strong>Safety-first</strong>
+        <p class="small">Robust training, daily toolbox talks and proactive risk management.</p>
+      </div>
+      <div class="card center">
+        <strong>Integrated delivery</strong>
+        <p class="small">Design-build and prefabrication strategies to reduce time and cost risk.</p>
+      </div>
+      <div class="card center">
+        <strong>Sustainability</strong>
+        <p class="small">Net-zero roadmaps and embodied carbon measurement for legacy assets.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container fade-in" style="margin-top:28px">
+    <h2 class="section-title">Our impact</h2>
+    <div style="display:flex;gap:12px;margin-top:12px;flex-wrap:wrap">
+      <div class="stat">
+        <div data-counter="1200" style="font-size:22px;font-weight:700">+500</div>
+        <div class="small">Projects</div>
+      </div>
+      <div class="stat">
+        <div data-counter="8" style="font-size:22px;font-weight:700">+5</div>
+        <div class="small">Countries</div>
+      </div>
+      <div class="stat">
+        <div data-counter="0.18" style="font-size:22px;font-weight:700">+10</div>
+        <div class="small">TRIR</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-card"></div>
+</div>
+
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <strong>Mvumu Empire Holdings</strong><br><span class="small">Providing technical and infrastructure support</span>
+    </div>
+    <div class="small">© 2025 Mvumu Empire Holdings (Pty) Ltd</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

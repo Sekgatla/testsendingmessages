@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Cookie Consent — Mvumu Empire Holdings</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html"><div class="logo">ME</div></a>
+    <nav>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+       
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div><a class="cta" href="contact.html">Request Quote</a></div>
+  </div>
+</header>
+
+<main class="container" style="padding:28px 0">
+<h1>Cookie Consent</h1>
+<p class="small">Our website uses cookies to improve user experience, analyze traffic, and for marketing purposes. By using our site, you consent to our cookie policy.</p>
+
+<button class="cta" onclick="acceptCookies()">Accept Cookies</button>
+
+<script>
+function acceptCookies(){
+  localStorage.setItem('cookiesAccepted', 'true');
+  alert('Thank you for accepting cookies.');
+}
+</script>
+</main>
+<footer><div class="container">© 2025 Mvumu Empire Holdings (Pty) Ltd</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
